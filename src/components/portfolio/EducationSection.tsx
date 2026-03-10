@@ -70,7 +70,7 @@ const EducationSection = () => (
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
                 <div>
                   <h3 className="font-bold text-lg text-gray-900">{edu.degree}</h3>
-                  <span className="text-primary font-medium text-sm">{edu.school}</span>
+                  <span className="text-primary font-medium text-base">{edu.school}</span>
                 </div>
                 <div className="flex flex-col md:items-end gap-1 text-sm text-gray-500">
                   <span className="flex items-center gap-1">
@@ -87,7 +87,7 @@ const EducationSection = () => (
                   {edu.coursework.map((course) => (
                     <span
                       key={course}
-                      className="px-2 py-0.5 bg-gray-50 border border-gray-200 rounded-full text-xs text-gray-600"
+                      className="px-2 py-0.5 bg-gray-50 border border-gray-200 rounded-full text-sm text-gray-600"
                     >
                       {course}
                     </span>

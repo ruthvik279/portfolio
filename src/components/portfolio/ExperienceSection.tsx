@@ -81,12 +81,12 @@ const ExperienceSection = () => (
                       href={exp.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="text-primary font-medium hover:underline text-sm"
+                      className="text-primary font-medium hover:underline text-base"
                     >
                       {exp.company}
                     </a>
                   ) : (
-                    <span className="text-primary font-medium text-sm">{exp.company}</span>
+                    <span className="text-primary font-medium text-base">{exp.company}</span>
                   )}
                 </div>
                 <div className="flex flex-col md:items-end gap-1 text-sm text-gray-500">
@@ -100,7 +100,7 @@ const ExperienceSection = () => (
               </div>
               <ul className="space-y-2">
                 {exp.bullets.map((b, j) => (
-                  <li key={j} className="flex items-start gap-2 text-gray-600 text-sm text-justify">
+                  <li key={j} className="flex items-start gap-2 text-gray-600 text-base text-justify">
                     <span className="mt-2 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
                     {b}
                   </li>

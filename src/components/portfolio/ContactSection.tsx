@@ -19,7 +19,7 @@ const ContactSection = () => (
       </motion.h2>
       <motion.p {...fadeUp(0.2)} className="text-white/60 text-lg max-w-xl mx-auto mb-10">
         I'm currently open to new opportunities. Whether it's a question, a
-        project, or just a hello — feel free to reach out.
+        project, or just a hello feel free to reach out.
       </motion.p>
 
       <motion.a
