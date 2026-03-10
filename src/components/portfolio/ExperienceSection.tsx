@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { Calendar, MapPin } from "lucide-react";
 
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1], delay },
+});
+
 const EXPERIENCES = [
   {
     role: "Software Engineering Co-op",
@@ -49,22 +56,19 @@ const ExperienceSection = () => (
         viewport={{ once: true }}
         className="mb-14"
       >
-        <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">
+      <motion.p {...fadeUp(0)} className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">
           Experience
-        </p>
-        <h2 className="font-display text-4xl font-bold text-brand-deep">
+        </motion.p>
+        <motion.h2 {...fadeUp(0.1)} className="font-display text-4xl font-bold text-brand-deep">
           Where I've Worked
-        </h2>
+        </motion.h2>
       </motion.div>
 
       <div className="space-y-6">
         {EXPERIENCES.map((exp, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
+            {...fadeUp(0.15 + i * 0.12)}
             className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100"
           >
             <div className={`h-1.5 bg-gradient-to-r ${exp.color}`} />

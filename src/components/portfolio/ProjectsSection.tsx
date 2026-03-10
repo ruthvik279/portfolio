@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1], delay },
+});
+
 const PROJECTS = [
   {
     title: "AI Knowledge Base Assistant",
@@ -37,22 +44,19 @@ const ProjectsSection = () => (
         viewport={{ once: true }}
         className="mb-14"
       >
-        <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">
+      <motion.p {...fadeUp(0)} className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">
           Projects
-        </p>
-        <h2 className="font-display text-4xl font-bold text-brand-deep">
+        </motion.p>
+        <motion.h2 {...fadeUp(0.1)} className="font-display text-4xl font-bold text-brand-deep">
           Things I've Built
-        </h2>
+        </motion.h2>
       </motion.div>
 
       <div className="grid md:grid-cols-3 gap-6">
         {PROJECTS.map((project, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
+            {...fadeUp(0.15 + i * 0.12)}
             className={`bg-gradient-to-br ${project.color} rounded-2xl p-6 border border-white shadow-sm flex flex-col gap-4`}
           >
             <div className="flex-1">
