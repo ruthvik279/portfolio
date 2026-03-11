@@ -34,7 +34,7 @@ const PUBLICATIONS = [
 
 const PublicationsSection = () => (
   <section id="publications" className="py-24 bg-white">
-    <div className="max-w-6xl mx-auto px-potholes6">
+      <div className="max-w-6xl mx-auto px-6">
       <motion.p {...fadeUp(0)} className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">
         Publications
       </motion.p>
