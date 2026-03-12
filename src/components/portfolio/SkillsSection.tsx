@@ -11,7 +11,7 @@ const SKILLS = [
   {
     category: "Languages & Frameworks",
     color: "from-primary to-brand-light",
-    items: ["Go", "Python", "TypeScript", "JavaScript", "SQL", "C/C++", "React", "Node.js", "Angular", "REST APIs"],
+    items: ["Go", "Python", "TypeScript", "JavaScript", "SQL", "C/C++", "React", "Node.js", "Angular", "REST APIs", "TensorFlow", "PyTorch", "LangChain"],
   },
   {
     category: "Cloud & DevOps",
@@ -21,7 +21,7 @@ const SKILLS = [
   {
     category: "DevSecOps & Databases",
     color: "from-emerald-500 to-teal-400",
-    items: ["Wiz", "Cosign", "SonarQube", "Harbor", "PostgreSQL", "MongoDB", "MySQL", "TensorFlow", "PyTorch", "LangChain"],
+    items: ["Wiz", "Cosign", "SonarQube", "Harbor", "PostgreSQL", "MongoDB", "MySQL"],
   },
 ];
 
