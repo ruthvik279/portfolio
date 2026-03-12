@@ -61,7 +61,7 @@ const HeroSection = () => (
         </a>
         <a
           href="#projects"
-          className="px-6 py-3 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 transition-all border border-white/20"
+          className="px-6 py-3 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg"
         >
           View Projects
         </a>
