@@ -9,7 +9,7 @@ const fadeUp = (delay = 0) => ({
 });
 
 const ContactSection = () => (
-  <section id="contact" className="py-24 bg-brand-deep text-white">
+  <section id="contact" className="py-24 bg-gradient-to-br from-brand-deep via-primary to-brand-light text-white">
     <div className="max-w-6xl mx-auto px-6 text-center">
       <motion.p {...fadeUp(0)} className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">
         Contact
@@ -31,7 +31,7 @@ const ContactSection = () => (
         </a>
       </motion.div>
 
-      <motion.div {...fadeUp(0.4)} className="flex items-center justify-center gap-8">
+      <motion.div {...fadeUp(0.4)} className="flex items-center justify-center gap-8 mb-16">
         <a
           href="https://github.com/ruthvik279"
           target="_blank"
