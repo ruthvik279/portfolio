@@ -55,13 +55,13 @@ const HeroSection = () => (
       <motion.div {...fadeUp(0.7)} className="flex items-center justify-center gap-4">
         <a
           href="#contact"
-          className="px-6 py-3 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg"
+          className="w-48 text-center px-6 py-3 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg"
         >
           Get in Touch
         </a>
         <a
           href="#experience"
-          className="px-6 py-3 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg"
+          className="w-48 text-center px-6 py-3 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg"
         >
           View Experience
         </a>
