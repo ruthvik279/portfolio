@@ -60,10 +60,10 @@ const HeroSection = () => (
           Get in Touch
         </a>
         <a
-          href="#projects"
+          href="#experience"
           className="px-6 py-3 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg"
         >
-          View Projects
+          View Experience
         </a>
       </motion.div>
     </div>
