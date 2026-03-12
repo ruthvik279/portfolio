@@ -22,13 +22,14 @@ const ContactSection = () => (
         project, or just a hello feel free to reach out.
       </motion.p>
 
-      <motion.a
-        {...fadeUp(0.3)}
-        href="mailto:ruthvikgoggi@gmail.com"
-        className="inline-block px-8 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg mb-10"
-      >
-        Say Hello
-      </motion.a>
+      <motion.div {...fadeUp(0.3)} className="mb-10 inline-block">
+        <a
+          href="mailto:ruthvikgoggi@gmail.com"
+          className="inline-block px-8 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg"
+        >
+          Say Hello
+        </a>
+      </motion.div>
 
       <motion.div {...fadeUp(0.4)} className="flex items-center justify-center gap-8">
         <a
