@@ -89,7 +89,7 @@ const ExperienceSection = () => (
                     <span className="text-primary font-medium text-base">{exp.company}</span>
                   )}
                 </div>
-                <div className="flex flex-col md:items-end gap-1 text-sm text-gray-500">
+                <div className="flex flex-col items-start md:items-end gap-1 text-sm text-gray-500">
                   <span className="flex items-center gap-1">
                     <MapPin size={13} /> {exp.location}
                   </span>

@@ -74,10 +74,10 @@ const EducationSection = () => (
                 </div>
                 <div className="flex flex-col md:items-end gap-1 text-sm text-gray-500">
                   <span className="flex items-center gap-1">
-                    <Calendar size={13} /> {edu.period}
+                    <MapPin size={13} /> {edu.location}
                   </span>
                   <span className="flex items-center gap-1">
-                    <MapPin size={13} /> {edu.location}
+                    <Calendar size={13} /> {edu.period}
                   </span>
                 </div>
               </div>
