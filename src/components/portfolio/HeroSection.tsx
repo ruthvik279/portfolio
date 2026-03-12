@@ -70,12 +70,14 @@ const HeroSection = () => (
 
     <motion.a
       href="#about"
-      className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer p-3 rounded-full bg-white hover:bg-white/90 transition-colors shadow-md"
+      className="absolute bottom-8 inset-x-0 flex justify-center cursor-pointer"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, y: [0, 8, 0] }}
       transition={{ opacity: { delay: 1, duration: 0.5 }, y: { repeat: Infinity, duration: 1.5, delay: 1 } }}
     >
-      <ArrowDown size={20} className="text-black" />
+      <span className="p-3 rounded-full bg-white hover:bg-white/90 transition-colors shadow-md">
+        <ArrowDown size={20} className="text-black" />
+      </span>
     </motion.a>
   </section>
 );
