@@ -24,7 +24,7 @@ const HeroSection = () => (
         Ruthvik Tarang Goggi
       </motion.h1>
       <motion.p {...fadeUp(0.4)} className="text-white/70 text-lg md:text-xl mb-8">
-        Software Engineer @ Siemens DISW · Cloud &amp; DevSecOps · MS CS @ GWU
+        Software Engineer @ Siemens DISW  |  Computer Science Grad @ GWU  |  AI &amp; ML Enthusiast  |  Cloud Infrastructure &amp; DevOps Engineer  |  AWS Certified  |  Oracle Certified
       </motion.p>
 
       <motion.div {...fadeUp(0.55)} className="flex items-center justify-center gap-4 mb-10">
