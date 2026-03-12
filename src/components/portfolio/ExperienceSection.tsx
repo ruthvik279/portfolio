@@ -91,10 +91,10 @@ const ExperienceSection = () => (
                 </div>
                 <div className="flex flex-col md:items-end gap-1 text-sm text-gray-500">
                   <span className="flex items-center gap-1">
-                    <Calendar size={13} /> {exp.period}
+                    <MapPin size={13} /> {exp.location}
                   </span>
                   <span className="flex items-center gap-1">
-                    <MapPin size={13} /> {exp.location}
+                    <Calendar size={13} /> {exp.period}
                   </span>
                 </div>
               </div>
