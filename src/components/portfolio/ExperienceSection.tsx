@@ -73,8 +73,8 @@ const ExperienceSection = () => (
           >
             <div className={`h-1.5 bg-gradient-to-r ${exp.color}`} />
             <div className="p-6">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
-                <div>
+              <div className="flex flex-row items-start justify-between gap-4 mb-4">
+                <div className="min-w-0">
                   <h3 className="font-bold text-lg text-gray-900">{exp.role}</h3>
                   {exp.url ? (
                     <a
@@ -89,7 +89,7 @@ const ExperienceSection = () => (
                     <span className="text-primary font-medium text-base">{exp.company}</span>
                   )}
                 </div>
-                <div className="flex flex-col items-start md:items-end gap-1 text-sm text-gray-500">
+                <div className="flex flex-col items-end gap-1 text-sm text-gray-500 shrink-0">
                   <span className="flex items-center gap-1">
                     <MapPin size={13} /> {exp.location}
                   </span>
