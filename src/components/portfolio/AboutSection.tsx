@@ -9,7 +9,7 @@ const fadeUp = (delay = 0) => ({
 });
 
 const AboutSection = () => (
-  <section id="about" className="py-24 bg-white">
+  <section id="about" className="py-24 bg-gray-50">
     <div className="max-w-6xl mx-auto px-6">
       <div className="max-w-3xl">
         <motion.p {...fadeUp(0)} className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">
