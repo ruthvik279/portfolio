@@ -47,7 +47,7 @@ const Header = () => {
               key={item.href}
               href={item.href}
               className={cn(
-                "text-sm font-medium transition-colors",
+                "text-base font-medium transition-colors",
                 scrolled ? "text-gray-600 hover:text-primary" : "text-white/80 hover:text-white"
               )}
             >
@@ -58,7 +58,7 @@ const Header = () => {
             href="/portfolio/Ruthvik_Goggi_Resume.pdf"
             target="_blank"
             rel="noreferrer"
-            className="px-4 py-2 bg-accent text-white text-sm font-medium rounded-lg hover:bg-accent/90 transition-colors"
+            className="px-4 py-2 bg-accent text-white text-base font-medium rounded-lg hover:bg-accent/90 transition-colors"
           >
             Resume
           </a>
@@ -81,7 +81,7 @@ const Header = () => {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-gray-600 hover:text-primary"
+              className="text-base font-medium text-gray-600 hover:text-primary"
               onClick={() => setOpen(false)}
             >
               {item.label}
@@ -91,7 +91,7 @@ const Header = () => {
             href="/portfolio/Ruthvik_Goggi_Resume.pdf"
             target="_blank"
             rel="noreferrer"
-            className="text-sm font-medium text-accent"
+            className="text-base font-medium text-accent"
           >
             Resume ↗
           </a>

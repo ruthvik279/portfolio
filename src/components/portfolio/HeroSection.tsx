@@ -23,7 +23,7 @@ const HeroSection = () => (
       <motion.h1 {...fadeUp(0.25)} className="font-display text-5xl md:text-7xl font-bold text-white mb-4">
         Ruthvik Tarang Goggi
       </motion.h1>
-      <motion.p {...fadeUp(0.4)} className="text-white/70 text-lg md:text-xl mb-8">
+      <motion.p {...fadeUp(0.4)} className="text-white/85 text-lg md:text-xl mb-8 font-medium">
         Software Engineer @ Siemens DISW  |  Computer Science Grad @ GWU  |  AI &amp; ML Enthusiast  |  Cloud Infrastructure &amp; DevOps Engineer  |  AWS Certified  |  Oracle Certified
       </motion.p>
 
@@ -55,13 +55,13 @@ const HeroSection = () => (
       <motion.div {...fadeUp(0.7)} className="flex items-center justify-center gap-4">
         <a
           href="#contact"
-          className="w-48 text-center px-6 py-3 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg"
+          className="w-40 text-center px-5 py-2.5 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg"
         >
           Get in Touch
         </a>
         <a
           href="#experience"
-          className="w-48 text-center px-6 py-3 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg"
+          className="w-40 text-center px-5 py-2.5 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all shadow-lg"
         >
           View Experience
         </a>

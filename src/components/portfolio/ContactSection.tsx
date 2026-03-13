@@ -17,7 +17,7 @@ const ContactSection = () => (
       <motion.h2 {...fadeUp(0.1)} className="font-display text-4xl font-bold mb-4">
         Get in Touch
       </motion.h2>
-      <motion.p {...fadeUp(0.2)} className="text-white/60 text-lg max-w-xl mx-auto mb-10">
+      <motion.p {...fadeUp(0.2)} className="text-white/80 text-lg max-w-xl mx-auto mb-10">
         I'm currently open to new opportunities. Whether it's a question, a
         project, or just a hello feel free to reach out.
       </motion.p>
@@ -36,7 +36,7 @@ const ContactSection = () => (
           href="https://github.com/ruthvik279"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm"
+          className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
         >
           <Github size={18} /> GitHub
         </a>
@@ -44,17 +44,21 @@ const ContactSection = () => (
           href="https://www.linkedin.com/in/ruthvik-goggi/"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm"
+          className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
         >
           <Linkedin size={18} /> LinkedIn
         </a>
         <a
           href="mailto:ruthvikgoggi@gmail.com"
-          className="flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm"
+          className="flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm"
         >
           <Mail size={18} /> Email
         </a>
       </motion.div>
+
+      <motion.p {...fadeUp(0.5)} className="text-white/75 text-sm font-medium">
+        © 2026 Ruthvik Tarang Goggi. All rights reserved.
+      </motion.p>
     </div>
   </section>
 );

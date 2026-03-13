@@ -12,7 +12,7 @@ const PROJECTS = [
   {
     title: "AI Knowledge Base Assistant",
     description:
-      "An AI-powered RAG chatbot that answers technical questions by retrieving context from internal documentation using FAISS vector search, OpenAI API, and LangChain. Containerized with Docker and exposed via FastAPI.",
+      "AI-powered Retrieval-Augmented Generation (RAG) chatbot that answers technical questions by retrieving relevant context from internal documentation using FAISS vector search, LangChain, and OpenAI APIs. Implemented semantic search over PDFs and markdown runbooks, exposed REST endpoints via FastAPI, and containerized the service with Docker for scalable deployment.",
     tags: ["Python", "LangChain", "OpenAI API", "FAISS", "FastAPI", "Docker"],
     live: "",
     color: "from-primary/10 to-brand-light/10",
@@ -20,7 +20,7 @@ const PROJECTS = [
   {
     title: "E-Commerce Platform",
     description:
-      "A scalable e-commerce backend built with Go, featuring RESTful APIs for product catalog management, authentication, and checkout with concurrency-safe goroutines supporting high-volume parallel requests.",
+      "A scalable e-commerce backend built with Go, implementing RESTful APIs for product catalog management, authentication, and checkout workflows. Leveraged goroutines and concurrency-safe design patterns to handle high-volume parallel requests, optimized MongoDB data models for dynamic product attributes and transactions, and structured modular services to ensure maintainable and extensible system architecture.",
     tags: ["Go", "Node.js", "MongoDB", "REST APIs"],
     live: "",
     color: "from-accent/10 to-amber-400/10",
@@ -28,7 +28,7 @@ const PROJECTS = [
   {
     title: "Extracurricular Event Tracker",
     description:
-      "A full-stack web app to manage extracurricular participation with secure auth, OTP-based password recovery, real-time Firebase sync, role-based access control, and interactive calendar event management.",
+      "A full-stack event management web application designed to track extracurricular participation with secure authentication, OTP-based password recovery, and role-based access control. Integrated Firebase for real-time data synchronization, implemented RESTful APIs with Node.js, and developed interactive calendar-based event management dashboards using React for scalable multi-user access.",
     tags: ["React.js", "Node.js", "Firebase"],
     live: "",
     color: "from-emerald-500/10 to-teal-400/10",
@@ -63,7 +63,7 @@ const ProjectsSection = () => (
               <h3 className="font-bold text-lg text-gray-900 mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-600 text-base leading-relaxed">
+              <p className="text-gray-600 text-base leading-relaxed text-justify">
                 {project.description}
               </p>
             </div>
